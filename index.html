@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arpan Kumar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<a href="https://www.linkedin.com/in/arpan-k-tech" target="_blank">
+    LinkedIn Profile
+</a>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+nav button{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#38bdf8;
+    color:#000;
+    font-weight:bold;
+    transition:all 0.4s ease;
+}
+.hero img:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+    box-shadow: 0 0 25px #38bdf8;
+}
+
+nav button:hover{
+    background:white;
+    color:#0f172a;
+    transform:scale(1.08);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#111827;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:15px;
+z-index:1000;
+}
+
+nav button{
+padding:10px 18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#38bdf8;
+font-weight:bold;
+}
+
+.section{
+display:none;
+padding:120px 10%;
+min-height:100vh;
+}
+
+.active{
+display:block;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:55px;
+color:#38bdf8;
+}
+
+.hero-text h2{
+margin:15px 0;
+}
+
+.hero-text p{
+line-height:1.8;
+color:#d1d5db;
+}
+
+.hero img{
+width:320px;
+border-radius:20px;
+border:4px solid #38bdf8;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+margin:15px 0;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:12px;
+font-weight:bold;
+}
+
+h2{
+margin-bottom:25px;
+color:#38bdf8;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:250px;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+nav{
+flex-wrap:wrap;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<button onclick="showSection('home')">Home</button>
+<button onclick="showSection('about')">About</button>
+<button onclick="showSection('skills')">Skills</button>
+<button onclick="showSection('education')">Education</button>
+<button onclick="showSection('projects')">Projects</button>
+<button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section active">
+<div class="hero">
+
+<div class="hero-text">
+<h1>Arpan Kumar</h1>
+<h2 id="typing"></h2>
+
+<p>
+I am a passionate Computer Science student with a strong interest in software development and problem-solving. I enjoy building projects using programming languages and continuously learning new technologies.
+</p>
+</div>
+
+<div>
+<img src="profile.jpg" alt="Arpan Kumar">
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a passionate Computer Science student with a strong interest in software development and problem-solving. I enjoy building projects using programming languages and continuously learning new technologies to enhance my technical skills.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+<h2>Skills</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">C</div>
+<div class="skill">SQL</div>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+
+<h2>Education</h2>
+
+<div class="card">
+<h3>MCA</h3>
+<p>Presidency College, Bengaluru</p>
+</div>
+
+<div class="card">
+<h3>B.Sc. IT</h3>
+<p>Patliputra University, Patna - 78%</p>
+</div>
+
+<div class="card">
+<h3>Intermediate</h3>
+<p>Seminary School +2, Patna - 65%</p>
+</div>
+
+<div class="card">
+<h3>Matriculation</h3>
+<p>Convent School, Patna - 54%</p>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Virtual AI Assistant</h3>
+<p>
+AI powered assistant capable of task automation, voice interaction and smart responses.
+</p>
+</div>
+
+<div class="card">
+<h3>Banking Loan Management System</h3>
+<p>
+A database-driven application used to manage customer records, loan processing and reports.
+</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+<h2>Contact Me</h2>
+
+<div class="contact card">
+<p>📧 arpank5516@gmail.com</p>
+<p>📱 6205330071</p>
+<p>🔗 LinkedIn: linkedin.com/in/arpan-k-tech</p>
+</div>
+
+</section>
+
+<script>
+
+function showSection(id){
+
+let sections=document.querySelectorAll('.section');
+
+sections.forEach(section=>{
+section.classList.remove('active');
+});
+
+document.getElementById(id).classList.add('active');
+}
+
+const text="Web Developer | MCA Student";
+let i=0;
+
+function typeEffect(){
+
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typeEffect,100);
+}
+
+}
+
+typeEffect();
+
+</script>
+
+</body>
+</html>
